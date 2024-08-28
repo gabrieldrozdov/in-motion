@@ -12,9 +12,9 @@ for (let link of document.querySelectorAll('.nav a')) {
 }
 
 // ADD CONTROLS ON HOVER FOR VIDEOS
-for (let video of document.querySelectorAll('video')) {
-	video.addEventListener('mouseenter', () => { video.controls = " " });
-}
+// for (let video of document.querySelectorAll('video')) {
+// 	video.addEventListener('mouseenter', () => { video.controls = " " });
+// }
 
 // LAZY LOADING VIDEOS
 // Create an observer

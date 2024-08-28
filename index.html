@@ -1,66 +1,3025 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>In Motion</title>
 
-	<meta name="author" content="GD with GD">
-	<meta name="keywords" content="Motion Design, Animation, Design Education, Tutorial, Pedagogy">
-	<meta name="description" content="Learn motion design through motion design.">
-	<meta property="og:url" content="https://inmotion.gdwithgd.com/">
-	<meta name="og:title" property="og:title" content="In Motion">
-	<meta property="og:description" content="Learn motion design through motion design.">
-	<meta property="og:image" content="/assets/meta/opengraph.jpg">
-	<link rel="icon" type="png" href="/assets/meta/favicon.png">
+		<!DOCTYPE html>
+		<html lang="en">
+		<head>
+			<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<title>In Motion</title>
+		
+			<meta name="author" content="GD with GD">
+			<meta name="keywords" content="Motion Design, Animation, Design Education, Tutorial, Pedagogy">
+			<meta name="description" content="Learn motion design through motion design.">
+			<meta property="og:url" content="https://inmotion.gdwithgd.com/">
+			<meta name="og:title" property="og:title" content="In Motion">
+			<meta property="og:description" content="Learn motion design through motion design.">
+			<meta property="og:image" content="/assets/meta/opengraph.jpg">
+			<link rel="icon" type="png" href="/assets/meta/favicon.png">
+		
+			<link rel="stylesheet" href="style.css">
+		</head>
+		<body>
+			<header class="header">
+				<h1 class="header-title">In Motion</h1>
+				<p class="header-desc">
+					The best way to learn a new skill is by practicing it. That’s how I learned to animate. Here’s a regimen you can follow for learning how to animate, with examples to inspire you. By <a href="https://gdwithgd.com/" target="_blank">GD with GD</a>.
+				</p>
+			</header>
+		
+			<button class="nav-toggle" onclick="openNav();">Table of Contents</button>
+			<nav class="nav" data-active="0">
+				<button class="nav-close" onclick="closeNav();">× Close Menu</button>
+				
+			<section class="nav-section">
+				<a class="nav-week" href="#week-1">
+					Week 1 <span style="color: hsl(0deg, 0%, 25%);">Fundamental principles</span>
+				</a>
+		
+				<a class="nav-study" href="#study-1">
+					<div class="nav-study-number">Study 1</div>
+					<div class="nav-study-name">A stop motion animation of a ball bouncing</span></div>
+				</a>
+			
+				<a class="nav-study" href="#study-2">
+					<div class="nav-study-number">Study 2</div>
+					<div class="nav-study-name">A stop motion animation of a person walking</span></div>
+				</a>
+			
+				<a class="nav-study" href="#study-3">
+					<div class="nav-study-number">Study 3</div>
+					<div class="nav-study-name">A stop motion animation of a leaf falling</span></div>
+				</a>
+			
+				<a class="nav-study" href="#study-4">
+					<div class="nav-study-number">Study 4</div>
+					<div class="nav-study-name">A hand drawn animation of a ball bouncing</span></div>
+				</a>
+			
+				<a class="nav-study" href="#study-5">
+					<div class="nav-study-number">Study 5</div>
+					<div class="nav-study-name">A hand drawn animation of a mouth saying “In Motion”</span></div>
+				</a>
+			
+				<a class="nav-study" href="#study-6">
+					<div class="nav-study-number">Study 6</div>
+					<div class="nav-study-name">A hand drawn animation of a head rotating</span></div>
+				</a>
+			
+			</section>
+		
+			<section class="nav-section">
+				<a class="nav-week" href="#week-2">
+					Week 2 <span style="color: hsl(0deg, 0%, 25%);">Going digital</span>
+				</a>
+		
+				<a class="nav-study" href="#study-7">
+					<div class="nav-study-number">Study 7</div>
+					<div class="nav-study-name">A geometric animation that feels corporate</span></div>
+				</a>
+			
+				<a class="nav-study" href="#study-8">
+					<div class="nav-study-number">Study 8</div>
+					<div class="nav-study-name">A text-based animation that feels poetic</span></div>
+				</a>
+			
+				<a class="nav-study" href="#study-9">
+					<div class="nav-study-number">Study 9</div>
+					<div class="nav-study-name">An image-based animation that looks like stop motion</span></div>
+				</a>
+			
+				<a class="nav-study" href="#study-10">
+					<div class="nav-study-number">Study 10</div>
+					<div class="nav-study-name">Something deliberately ugly with lots of canned effects</span></div>
+				</a>
+			
+			</section>
+		
+			<section class="nav-section">
+				<a class="nav-week" href="#week-3">
+					Week 3 <span style="color: hsl(0deg, 0%, 25%);">Easing and expression</span>
+				</a>
+		
+				<a class="nav-study" href="#study-11">
+					<div class="nav-study-number">Study 11</div>
+					<div class="nav-study-name">Something bouncy and heavy</span></div>
+				</a>
+			
+				<a class="nav-study" href="#study-12">
+					<div class="nav-study-number">Study 12</div>
+					<div class="nav-study-name">Something light and airy</span></div>
+				</a>
+			
+				<a class="nav-study" href="#study-13">
+					<div class="nav-study-number">Study 13</div>
+					<div class="nav-study-name">Something puppeteered</span></div>
+				</a>
+			
+				<a class="nav-study" href="#study-14">
+					<div class="nav-study-number">Study 14</div>
+					<div class="nav-study-name">Something loud and expressive</span></div>
+				</a>
+			
+			</section>
+		
+			<section class="nav-section">
+				<a class="nav-week" href="#week-4">
+					Week 4 <span style="color: hsl(0deg, 0%, 25%);">Video and sound</span>
+				</a>
+		
+				<a class="nav-study" href="#study-15">
+					<div class="nav-study-number">Study 15</div>
+					<div class="nav-study-name">A scene from a pop music video, with music</span></div>
+				</a>
+			
+				<a class="nav-study" href="#study-16">
+					<div class="nav-study-number">Study 16</div>
+					<div class="nav-study-name">An overly sentimental montage, with music</span></div>
+				</a>
+			
+				<a class="nav-study" href="#study-17">
+					<div class="nav-study-number">Study 17</div>
+					<div class="nav-study-name">A scene from a horror film, with sound effects</span></div>
+				</a>
+			
+				<a class="nav-study" href="#study-18">
+					<div class="nav-study-number">Study 18</div>
+					<div class="nav-study-name">A scene from an unfunny comedy, with sound effects</span></div>
+				</a>
+			
+			</section>
+		
+			<section class="nav-section">
+				<a class="nav-week" href="#week-5">
+					Week 5 <span style="color: hsl(0deg, 0%, 25%);">Vector illustration</span>
+				</a>
+		
+				<a class="nav-study" href="#study-19">
+					<div class="nav-study-number">Study 19</div>
+					<div class="nav-study-name">A static icon turned into an animated icon</span></div>
+				</a>
+			
+				<a class="nav-study" href="#study-20">
+					<div class="nav-study-number">Study 20</div>
+					<div class="nav-study-name">A musical instrument playing a note</span></div>
+				</a>
+			
+				<a class="nav-study" href="#study-21">
+					<div class="nav-study-number">Study 21</div>
+					<div class="nav-study-name">A digital screen loading some content</span></div>
+				</a>
+			
+				<a class="nav-study" href="#study-22">
+					<div class="nav-study-number">Study 22</div>
+					<div class="nav-study-name">An animal just doing its thing</span></div>
+				</a>
+			
+			</section>
+		
+			<section class="nav-section">
+				<a class="nav-week" href="#week-6">
+					Week 6 <span style="color: hsl(0deg, 0%, 25%);">Kinetic typography</span>
+				</a>
+		
+				<a class="nav-study" href="#study-23">
+					<div class="nav-study-number">Study 23</div>
+					<div class="nav-study-name">A piece of concrete poetry</span></div>
+				</a>
+			
+				<a class="nav-study" href="#study-24">
+					<div class="nav-study-number">Study 24</div>
+					<div class="nav-study-name">A static wordmark turned into an animated logo</span></div>
+				</a>
+			
+				<a class="nav-study" href="#study-25">
+					<div class="nav-study-number">Study 25</div>
+					<div class="nav-study-name">A single word brought to life through motion</span></div>
+				</a>
+			
+				<a class="nav-study" href="#study-26">
+					<div class="nav-study-number">Study 26</div>
+					<div class="nav-study-name">A single letter transforming from one font to another</span></div>
+				</a>
+			
+			</section>
+		
+			<section class="nav-section">
+				<a class="nav-week" href="#week-7">
+					Week 7 <span style="color: hsl(0deg, 0%, 25%);">Motion posters</span>
+				</a>
+		
+				<a class="nav-study" href="#study-27">
+					<div class="nav-study-number">Study 27</div>
+					<div class="nav-study-name">An album cover turned into a motion poster</span></div>
+				</a>
+			
+				<a class="nav-study" href="#study-28">
+					<div class="nav-study-number">Study 28</div>
+					<div class="nav-study-name">A theater poster turned into a motion poster</span></div>
+				</a>
+			
+				<a class="nav-study" href="#study-29">
+					<div class="nav-study-number">Study 29</div>
+					<div class="nav-study-name">A film poster turned into a motion poster</span></div>
+				</a>
+			
+				<a class="nav-study" href="#study-30">
+					<div class="nav-study-number">Study 30</div>
+					<div class="nav-study-name">A design of your choosing turned into a motion poster</span></div>
+				</a>
+			
+			</section>
+		
+			<section class="nav-section">
+				<a class="nav-week" href="#week-8">
+					Week 8 <span style="color: hsl(0deg, 0%, 25%);">Brand identity</span>
+				</a>
+		
+				<a class="nav-study" href="#study-31">
+					<div class="nav-study-number">Study 31</div>
+					<div class="nav-study-name">An original kinetic logo for something of your choosing (a company, a show, a video game, etc.)</span></div>
+				</a>
+			
+				<a class="nav-study" href="#study-32">
+					<div class="nav-study-number">Study 32</div>
+					<div class="nav-study-name">An animated background graphic pattern</span></div>
+				</a>
+			
+				<a class="nav-study" href="#study-33">
+					<div class="nav-study-number">Study 33</div>
+					<div class="nav-study-name">An in-brand sample of kinetic typography</span></div>
+				</a>
+			
+				<a class="nav-study" href="#study-34">
+					<div class="nav-study-number">Study 34</div>
+					<div class="nav-study-name">An animated Instagram post</span></div>
+				</a>
+			
+			</section>
+		
+			</nav>
 
-	<link rel="stylesheet" href="style.css">
-</head>
-<body>
-	<header class="header">
-		<h1 class="header-title">In Motion</h1>
-		<p class="header-desc">
-			The best way to learn a new skill is by practicing it. That’s how I learned to animate. Here’s a regimen you can follow for learning how to animate, with references to inspire you. By <a href="https://gdwithgd.com/" target="_blank">GD with GD</a>.
-		</p>
-	</header>
+			
+			<section class="week" id="week-1">
+				<h2 class="week-title"><a href="#week-1">Week 1</a> <span style="color: hsl(0deg, 0%, 75%);">Fundamental principles</span></h2>
+		
+				<div class="study" id="study-1">
+					<div class="study-heading">
+						<a href="#study-1" class="study-number">Study 1</a>
+						<h3 class="study-title">A stop motion animation of a ball bouncing</h3>
+					</div>
+					<div class="study-references">
+						
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					</div>
+				</div>
+			
+				<div class="study" id="study-2">
+					<div class="study-heading">
+						<a href="#study-2" class="study-number">Study 2</a>
+						<h3 class="study-title">A stop motion animation of a person walking</h3>
+					</div>
+					<div class="study-references">
+						
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					</div>
+				</div>
+			
+				<div class="study" id="study-3">
+					<div class="study-heading">
+						<a href="#study-3" class="study-number">Study 3</a>
+						<h3 class="study-title">A stop motion animation of a leaf falling</h3>
+					</div>
+					<div class="study-references">
+						
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					</div>
+				</div>
+			
+				<div class="study" id="study-4">
+					<div class="study-heading">
+						<a href="#study-4" class="study-number">Study 4</a>
+						<h3 class="study-title">A hand drawn animation of a ball bouncing</h3>
+					</div>
+					<div class="study-references">
+						
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					</div>
+				</div>
+			
+				<div class="study" id="study-5">
+					<div class="study-heading">
+						<a href="#study-5" class="study-number">Study 5</a>
+						<h3 class="study-title">A hand drawn animation of a mouth saying “In Motion”</h3>
+					</div>
+					<div class="study-references">
+						
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					</div>
+				</div>
+			
+				<div class="study" id="study-6">
+					<div class="study-heading">
+						<a href="#study-6" class="study-number">Study 6</a>
+						<h3 class="study-title">A hand drawn animation of a head rotating</h3>
+					</div>
+					<div class="study-references">
+						
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					</div>
+				</div>
+			
+			</section>
+		
+			<section class="week" id="week-2">
+				<h2 class="week-title"><a href="#week-2">Week 2</a> <span style="color: hsl(0deg, 0%, 75%);">Going digital</span></h2>
+		
+				<div class="study" id="study-7">
+					<div class="study-heading">
+						<a href="#study-7" class="study-number">Study 7</a>
+						<h3 class="study-title">A geometric animation that feels corporate</h3>
+					</div>
+					<div class="study-references">
+						
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					</div>
+				</div>
+			
+				<div class="study" id="study-8">
+					<div class="study-heading">
+						<a href="#study-8" class="study-number">Study 8</a>
+						<h3 class="study-title">A text-based animation that feels poetic</h3>
+					</div>
+					<div class="study-references">
+						
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					</div>
+				</div>
+			
+				<div class="study" id="study-9">
+					<div class="study-heading">
+						<a href="#study-9" class="study-number">Study 9</a>
+						<h3 class="study-title">An image-based animation that looks like stop motion</h3>
+					</div>
+					<div class="study-references">
+						
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					</div>
+				</div>
+			
+				<div class="study" id="study-10">
+					<div class="study-heading">
+						<a href="#study-10" class="study-number">Study 10</a>
+						<h3 class="study-title">Something deliberately ugly with lots of canned effects</h3>
+					</div>
+					<div class="study-references">
+						
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					</div>
+				</div>
+			
+			</section>
+		
+			<section class="week" id="week-3">
+				<h2 class="week-title"><a href="#week-3">Week 3</a> <span style="color: hsl(0deg, 0%, 75%);">Easing and expression</span></h2>
+		
+				<div class="study" id="study-11">
+					<div class="study-heading">
+						<a href="#study-11" class="study-number">Study 11</a>
+						<h3 class="study-title">Something bouncy and heavy</h3>
+					</div>
+					<div class="study-references">
+						
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					</div>
+				</div>
+			
+				<div class="study" id="study-12">
+					<div class="study-heading">
+						<a href="#study-12" class="study-number">Study 12</a>
+						<h3 class="study-title">Something light and airy</h3>
+					</div>
+					<div class="study-references">
+						
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					</div>
+				</div>
+			
+				<div class="study" id="study-13">
+					<div class="study-heading">
+						<a href="#study-13" class="study-number">Study 13</a>
+						<h3 class="study-title">Something puppeteered</h3>
+					</div>
+					<div class="study-references">
+						
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					</div>
+				</div>
+			
+				<div class="study" id="study-14">
+					<div class="study-heading">
+						<a href="#study-14" class="study-number">Study 14</a>
+						<h3 class="study-title">Something loud and expressive</h3>
+					</div>
+					<div class="study-references">
+						
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					</div>
+				</div>
+			
+			</section>
+		
+			<section class="week" id="week-4">
+				<h2 class="week-title"><a href="#week-4">Week 4</a> <span style="color: hsl(0deg, 0%, 75%);">Video and sound</span></h2>
+		
+				<div class="study" id="study-15">
+					<div class="study-heading">
+						<a href="#study-15" class="study-number">Study 15</a>
+						<h3 class="study-title">A scene from a pop music video, with music</h3>
+					</div>
+					<div class="study-references">
+						
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					</div>
+				</div>
+			
+				<div class="study" id="study-16">
+					<div class="study-heading">
+						<a href="#study-16" class="study-number">Study 16</a>
+						<h3 class="study-title">An overly sentimental montage, with music</h3>
+					</div>
+					<div class="study-references">
+						
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					</div>
+				</div>
+			
+				<div class="study" id="study-17">
+					<div class="study-heading">
+						<a href="#study-17" class="study-number">Study 17</a>
+						<h3 class="study-title">A scene from a horror film, with sound effects</h3>
+					</div>
+					<div class="study-references">
+						
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					</div>
+				</div>
+			
+				<div class="study" id="study-18">
+					<div class="study-heading">
+						<a href="#study-18" class="study-number">Study 18</a>
+						<h3 class="study-title">A scene from an unfunny comedy, with sound effects</h3>
+					</div>
+					<div class="study-references">
+						
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					</div>
+				</div>
+			
+			</section>
+		
+			<section class="week" id="week-5">
+				<h2 class="week-title"><a href="#week-5">Week 5</a> <span style="color: hsl(0deg, 0%, 75%);">Vector illustration</span></h2>
+		
+				<div class="study" id="study-19">
+					<div class="study-heading">
+						<a href="#study-19" class="study-number">Study 19</a>
+						<h3 class="study-title">A static icon turned into an animated icon</h3>
+					</div>
+					<div class="study-references">
+						
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					</div>
+				</div>
+			
+				<div class="study" id="study-20">
+					<div class="study-heading">
+						<a href="#study-20" class="study-number">Study 20</a>
+						<h3 class="study-title">A musical instrument playing a note</h3>
+					</div>
+					<div class="study-references">
+						
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					</div>
+				</div>
+			
+				<div class="study" id="study-21">
+					<div class="study-heading">
+						<a href="#study-21" class="study-number">Study 21</a>
+						<h3 class="study-title">A digital screen loading some content</h3>
+					</div>
+					<div class="study-references">
+						
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					</div>
+				</div>
+			
+				<div class="study" id="study-22">
+					<div class="study-heading">
+						<a href="#study-22" class="study-number">Study 22</a>
+						<h3 class="study-title">An animal just doing its thing</h3>
+					</div>
+					<div class="study-references">
+						
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					</div>
+				</div>
+			
+			</section>
+		
+			<section class="week" id="week-6">
+				<h2 class="week-title"><a href="#week-6">Week 6</a> <span style="color: hsl(0deg, 0%, 75%);">Kinetic typography</span></h2>
+		
+				<div class="study" id="study-23">
+					<div class="study-heading">
+						<a href="#study-23" class="study-number">Study 23</a>
+						<h3 class="study-title">A piece of concrete poetry</h3>
+					</div>
+					<div class="study-references">
+						
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					</div>
+				</div>
+			
+				<div class="study" id="study-24">
+					<div class="study-heading">
+						<a href="#study-24" class="study-number">Study 24</a>
+						<h3 class="study-title">A static wordmark turned into an animated logo</h3>
+					</div>
+					<div class="study-references">
+						
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					</div>
+				</div>
+			
+				<div class="study" id="study-25">
+					<div class="study-heading">
+						<a href="#study-25" class="study-number">Study 25</a>
+						<h3 class="study-title">A single word brought to life through motion</h3>
+					</div>
+					<div class="study-references">
+						
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					</div>
+				</div>
+			
+				<div class="study" id="study-26">
+					<div class="study-heading">
+						<a href="#study-26" class="study-number">Study 26</a>
+						<h3 class="study-title">A single letter transforming from one font to another</h3>
+					</div>
+					<div class="study-references">
+						
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					</div>
+				</div>
+			
+			</section>
+		
+			<section class="week" id="week-7">
+				<h2 class="week-title"><a href="#week-7">Week 7</a> <span style="color: hsl(0deg, 0%, 75%);">Motion posters</span></h2>
+		
+				<div class="study" id="study-27">
+					<div class="study-heading">
+						<a href="#study-27" class="study-number">Study 27</a>
+						<h3 class="study-title">An album cover turned into a motion poster</h3>
+					</div>
+					<div class="study-references">
+						
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					</div>
+				</div>
+			
+				<div class="study" id="study-28">
+					<div class="study-heading">
+						<a href="#study-28" class="study-number">Study 28</a>
+						<h3 class="study-title">A theater poster turned into a motion poster</h3>
+					</div>
+					<div class="study-references">
+						
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					</div>
+				</div>
+			
+				<div class="study" id="study-29">
+					<div class="study-heading">
+						<a href="#study-29" class="study-number">Study 29</a>
+						<h3 class="study-title">A film poster turned into a motion poster</h3>
+					</div>
+					<div class="study-references">
+						
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					</div>
+				</div>
+			
+				<div class="study" id="study-30">
+					<div class="study-heading">
+						<a href="#study-30" class="study-number">Study 30</a>
+						<h3 class="study-title">A design of your choosing turned into a motion poster</h3>
+					</div>
+					<div class="study-references">
+						
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					</div>
+				</div>
+			
+			</section>
+		
+			<section class="week" id="week-8">
+				<h2 class="week-title"><a href="#week-8">Week 8</a> <span style="color: hsl(0deg, 0%, 75%);">Brand identity</span></h2>
+		
+				<div class="study" id="study-31">
+					<div class="study-heading">
+						<a href="#study-31" class="study-number">Study 31</a>
+						<h3 class="study-title">An original kinetic logo for something of your choosing (a company, a show, a video game, etc.)</h3>
+					</div>
+					<div class="study-references">
+						
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					</div>
+				</div>
+			
+				<div class="study" id="study-32">
+					<div class="study-heading">
+						<a href="#study-32" class="study-number">Study 32</a>
+						<h3 class="study-title">An animated background graphic pattern</h3>
+					</div>
+					<div class="study-references">
+						
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					</div>
+				</div>
+			
+				<div class="study" id="study-33">
+					<div class="study-heading">
+						<a href="#study-33" class="study-number">Study 33</a>
+						<h3 class="study-title">An in-brand sample of kinetic typography</h3>
+					</div>
+					<div class="study-references">
+						
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					</div>
+				</div>
+			
+				<div class="study" id="study-34">
+					<div class="study-heading">
+						<a href="#study-34" class="study-number">Study 34</a>
+						<h3 class="study-title">An animated Instagram post</h3>
+					</div>
+					<div class="study-references">
+						
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					<figure class="study-reference">
+						<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
+							<source data-src="">
+						</video>
+						<figcaption class="study-reference-caption">
+							Coming soon!<br>
+							<a href="/" target="_blank"></a>
+						</figcaption>
+					</figure>
+				
+					</div>
+				</div>
+			
+			</section>
+		
 
-	<button class="nav-toggle" onclick="openNav();">Table of Contents</button>
-	<nav class="nav" data-active="0">
-		<button class="nav-close" onclick="closeNav();">× Close Menu</button>
-		<section class="nav-section">
-			<a class="nav-week" href="#week-1">
-				Week 1 <span style="opacity: .5;">Foundations</span>
-			</a>
-			<a class="nav-study" href="#study-1">
-				<div class="nav-study-number">Study 1</div>
-				<div class="nav-study-name">Animate a ball bouncing <span style="opacity: .5;">Use Photoshop</span></div>
-			</a>
-		</section>
-	</nav>
-
-	<section class="week" id="week-1">
-		<h2 class="week-title"><a href="#week-1">Week 1</a> <span style="opacity: .5;">Foundations</span></h2>
+			<script src="script.js"></script>
+		</body>
+		</html>
 	
-		<div class="study" id="study-1">
-			<div class="study-heading">
-				<a href="#study-1" class="study-number">Study 1</a>
-				<h3 class="study-title">Animate a ball bouncing <span style="opacity: .5;">Use Photoshop</span></h3>
-			</div>
-			<div class="study-references">
-				<figure class="study-reference">
-					<video autoplay muted loop playsinline disableremoteplayback class="study-reference-media">
-						<source data-src="/assets/references/study-1/osesp_01_logo_animation.mp4">
-					</video>
-					<figcaption class="study-reference-caption">
-						São Paulo Symphony Orchestra by Polar<br>
-						<a href="https://www.underconsideration.com/brandnew/archives/new_logo_and_identity_for_sao_paulo_symphony_orchestra_by_polar.php" target="_blank">Source</a>
-						<a href="/assets/references/study-1/osesp_01_logo_animation.mp4" download>Download</a>
-					</figcaption>
-				</figure>
-			</div>
-		</div>
-	</section>
-
-	<script src="script.js"></script>
-</body>
-</html>

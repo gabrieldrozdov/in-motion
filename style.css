@@ -2,6 +2,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	scroll-margin-top: 160px;
 }
 body {
 	font-family: Arial, sans-serif;
@@ -22,7 +23,7 @@ a:active {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: 20px 40px;
-	margin: 40px 40px 80px 40px;
+	margin: 80px 40px 160px 40px;
 	align-items: end;
 }
 .header-title {
@@ -40,7 +41,7 @@ a:active {
 @media only screen and (max-width: 800px) {
 	.header {
 		grid-template-columns: 1fr;
-		margin: 40px 20px 80px 20px;
+		margin: 40px 20px 160px 20px;
 	}
 }
 
@@ -62,6 +63,7 @@ a:active {
 	font-weight: bold;
 	letter-spacing: -0.05em;
 	padding: 10px 20px;
+	z-index: 9;
 	cursor: pointer;
 }
 .nav-toggle:hover {
@@ -115,7 +117,7 @@ a:active {
 .nav-section {
 	display: flex;
 	flex-direction: column;
-	gap: 10px;
+	gap: 20px;
 }
 .nav-week {
 	color: white;
@@ -187,13 +189,16 @@ a:active {
 	margin: 40px 0;
 }
 .week-title {
-	margin: 0 40px 80px 40px;
+	margin: 160px 40px;
 	border-top: 10px solid black;
 	font-size: 64px;
 	letter-spacing: -0.05em;
 	text-transform: uppercase;
 	line-height: .9em;
 	padding-top: 10px;
+	position: sticky;
+	top: 20px;
+	z-index: 5;
 }
 .week-title a {
 	text-decoration: none;
@@ -233,13 +238,14 @@ a:active {
 	letter-spacing: -0.05em;
 }
 .study-references {
-	margin: 20px 0 80px 0;
+	margin: 20px 0 160px 0;
 	padding: 10px 40px 0 40px;
 	display: grid;
 	grid-auto-flow: column;
 	overflow-x: scroll;
 	gap: 20px;
 	scroll-snap-type: x mandatory;
+	justify-content: start;
 }
 .study-reference {
 	display: flex;
@@ -250,10 +256,11 @@ a:active {
 }
 .study-reference-media {
 	box-shadow: 0 5px 10px rgba(0,0,0,.1);
-	height: 240px;
+	height: 400px;
 	min-width: 100px;
 	width: min-content;
 	background-color: rgba(0,0,0,.05);
+	aspect-ratio: 1/1;
 }
 .study-reference-caption {
 	font-size: 12px;
@@ -267,7 +274,7 @@ a:active {
 	}
 	.week-title {
 		font-size: 40px;
-		margin: 0 20px 80px 20px;
+		margin: 160px 20px;
 	}
 	.study-heading {
 		margin: 0 20px;
@@ -285,6 +292,6 @@ a:active {
 		scroll-margin-left: 20px;
 	}
 	.study-reference-media {
-		height: 160px;
+		height: 200px;
 	}
 }
